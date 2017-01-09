@@ -4,7 +4,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var port = process.env.PORT || 8080;
-mongoose.connect('localhost:/27017/test');
+mongoose.connect('mongodb://localhost:27017/test');
 
 
 var ourSchema = mongoose.Schema({
