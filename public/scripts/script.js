@@ -23,4 +23,8 @@ myApp.controller('whereMyPeeps', ['$scope', '$http', function($scope, $http) {
             console.log($scope.allTheRecords);
         });
     };
+    $scope.removeRecord = function(indexIn) {
+
+    }; // end removeRecord
+
 }]);

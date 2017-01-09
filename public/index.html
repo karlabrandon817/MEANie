@@ -18,7 +18,7 @@
         <button ng-click='addRecord()'>Add</button>
         <button ng-click='getRecords()'>Read</button>
         <div ng-repeat='record in allTheRecords'>
-            {{record.name}} from {{record.location}}
+            {{record.name}} from {{record.location}} <button type="button" ng-click="removeRecord($index)">Delete</button></button>
         </div>
     </div>
 </body>
