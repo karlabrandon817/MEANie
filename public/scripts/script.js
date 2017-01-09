@@ -15,7 +15,7 @@ myApp.controller('whereMyPeeps', ['$scope', '$http', function($scope, $http) {
         $scope.locationIn = '';
     };
     $scope.getRecords = function() {
-        $.http({
+        $http({
             method: 'GET',
             url: '/getRecords',
         }).then(function(response) {
